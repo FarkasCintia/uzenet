@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="my.js"></script>
+    <link rel="stylesheet" href="my.css">
+    <title>Üzenetek</title>
+</head>
+<body>
+
+<div id="senders">
+    <div>
+        <h1>Béla</h1>
+        <textarea id="input-bela"></textarea>
+        <button onclick="sendMessage('input-bela', 'Béla')">Küld</button>
+    </div>
+
+    <div>
+        <h1>Jani</h1>
+        <textarea id="input-jani"></textarea>
+        <button onclick="sendMessage('input-jani', 'Jani')">Küld</button>
+    </div>
+
+    <div>
+        <h1>Bernát</h1>
+        <textarea id="input-bernat"></textarea>
+        <button onclick="sendMessage('input-bernat', 'Bernát')">Küld</button>
+    </div>
+
+    <div>
+        <h1>Márió</h1>
+        <textarea id="input-mario"></textarea>
+        <button onclick="sendMessage('input-mario', 'Márió')">Küld</button>
+    </div>
+</div>
+
+<div id="messages"></div>
+
+<button onclick="sendBack()">Visszaküld</button>
+</body>
+</html>
